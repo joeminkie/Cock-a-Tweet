@@ -15,8 +15,9 @@ h1,h2,h3,h4,h5,h6{
 /*  MAIN  */
 
 html{
-	background: #4D293E;
-	color: #D4C3B9;
+	background: #FFFE8C;
+	color: #303030;
+	font: 17px bold Helvetica;
 }
 
 p#version {
@@ -28,4 +29,13 @@ p#version {
 	background: #DDDDDD;
 	color: #666666;
 	font: 9px Helvetica;
+}
+
+#cockatweet {
+	position: absolute;
+	top: 0; left: 0;
+	height: 460px;
+	width: 320px;
+	display: block;
+	background: transparent url("../img/layout.png") no-repeat 0 0;
 }
