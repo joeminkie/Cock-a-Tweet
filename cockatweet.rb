@@ -10,6 +10,7 @@ configure do
 end
 
 before do
+  # can this go in configure?
   mime :'manifest', 'text/cache-manifest'
 end
 
@@ -21,6 +22,7 @@ helpers do
 end
 
 get '/' do
+  # do i need to do this redirect?
   redirect '/index.html'
 end
 
