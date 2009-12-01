@@ -1,0 +1,41 @@
+article,aside,dialog,figure,footer,header,hgroup,menu,nav,section { display: block; }
+
+/*  RESETS  */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+	margin:0;
+	padding:0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+	font-weight:normal;
+}
+
+/*  MAIN  */
+
+html{
+	background: #FFFE8C;
+	color: #303030;
+	font: 17px bold Helvetica;
+}
+
+p#version {
+	position:absolute;
+	left: 1px;
+	top: 1px;
+	z-index:999;
+	display: block;
+	background: #DDDDDD;
+	color: #666666;
+	font: 9px Helvetica;
+}
+
+#cockatweet {
+	position: absolute;
+	top: 0; left: 0;
+	height: 460px;
+	width: 320px;
+	display: block;
+	background: transparent url("../img/layout.png") no-repeat 0 0;
+}
