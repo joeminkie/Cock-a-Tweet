@@ -1,4 +1,4 @@
-var theVersion = 0.01;
+var theVersion = 0.03;
 var xhr = false;
 
 var a = null;
@@ -10,4 +10,7 @@ window.onload = initCockATweet;
 
 function initCockATweet(){
 	document.getElementById("version").innerHTML = theVersion;
+	if (window.navigator.standalone) {
+		document.addEventListener("touchmove", function(e){e.preventDefault();}, false);
+	}
 }

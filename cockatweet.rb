@@ -6,11 +6,11 @@ require 'erb'
 require 'logger'
 
 configure do
-  @@version = '0.01'
+  @@version = ' v0.03'
 end
 
 before do
-  
+  mime :'manifest', 'text/cache-manifest'
 end
 
 helpers do
@@ -21,6 +21,10 @@ helpers do
 end
 
 get '/' do
+  redirect '/index.html'
+end
+
+get '/index.html' do
   @title = 'Cock-a-Tweet' + @@version
   erb :index
 end
